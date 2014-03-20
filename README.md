@@ -1,6 +1,10 @@
 Programming-Challenges
 ======================
 
+Brain workouts, challenges, etc.
+Collaborators: 	Nathaniel Mendoza
+				Adam Tse
+
 Commit Message Style(without quotes):
 
 + "Name" - "Change 1"
