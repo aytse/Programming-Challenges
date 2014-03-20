@@ -1,7 +1,8 @@
 Programming-Challenges
 ======================
 
-Commit Message Style:
+Commit Message Style(without quotes):
 
-+ "Name" - "Commit Message - Change 1"
++ "Name" - "Change 1"
 + "Name" - "Change 2"
++ "Name" - "Change n"
