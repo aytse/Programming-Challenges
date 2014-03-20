@@ -1,0 +1,44 @@
+A produce warehouse in Arizona has a number of Air Conditioning units 
+installed in a successive manner, all in a row. Each AC unit has a light indicator 
+which identifies is current operation status. Green light is turned on for a fixed 
+number of seconds which indicates the unit is currently operating, then the unit 
+turns Yellow for a fixed number of seconds indicating it is currently in 
+temporary cool off state to prevent overheating, then turns Red for a fixed 
+number of seconds indicating it has overheated. To prevent an overload on the 
+main power supply this cycle is repeated for each AC unit, which have their 
+own set of timings. When all units are initially turned on, they start at the 
+beginning of their cycle with a Green light. Given N AC units, with their 
+respective timings, compute the earliest time (in seconds) when all lights show 
+Red. 
+In the example above, AC unit #1 turns Red at the 5th second, but when this 
+happens, AC unit #2 is Yellow. At the 8th second, AC Unit #2 is Red but AC 
+unit #1 has cycled through and is Green again. You can verify that in the 18th 
+second, both units are Red. You can assume the total maximum cycle (adding 
+Green, Yellow and Red times) is 99 seconds. You can assume 0 < N < 5 and 
+each Green, Yellow and Red time period is at least 1 second long. 
+
+Description of Input 
+ 
+Your program will read from standard input. The first line will contain a 
+positive integer on a line by itself representing the number of AC units, N. The 
+next N lines represent the lights. Each line of input will contain three positive 
+integers separated by spaces – G, Y and R – representing the number of seconds 
+that light is Green, then Yellow, then Red. 
+ 
+ 
+Description of Output 
+ 
+You must output a single positive integer on a line by itself representing the 
+earliest time (in seconds) when all N lights show red. 
+
+Sample Case 
+ 
+Input 
+ 
+2 
+2 2 2 
+4 3 3 
+ 
+Output 
+ 
+18 
