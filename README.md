@@ -3,5 +3,5 @@ Programming-Challenges
 
 Commit Message Style:
 
-+ <INSERT NAME HERE(without <>)> - <Change #1>
-+ <NAME> - <Change #2>
++ "Name" - "Commit Message - Change 1"
++ "Name" - "Change 2"
