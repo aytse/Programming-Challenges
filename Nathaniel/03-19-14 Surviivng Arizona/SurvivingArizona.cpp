@@ -72,13 +72,13 @@ int main(int argc, const char *argv[])
 	//initalize the content array
     for(int i = 0; i < acCount; ++i)
     {
-		int numGreen, numYellow, numRed;
-		std::cin >> numGreen;
-		std::cin >> numYellow;
-		std::cin >> numRed;
-		
-		content[i][0] = numGreen + numYellow;
-		content[i][1] = numRed;
+	int numGreen, numYellow, numRed;
+	std::cin >> numGreen;
+	std::cin >> numYellow;
+	std::cin >> numRed;
+	
+	content[i][0] = numGreen + numYellow;
+	content[i][1] = numRed;
 	
     }    
 	
@@ -86,17 +86,17 @@ int main(int argc, const char *argv[])
     int time = 1;
     while(true)
     {
-		//Check the status of each AC unit (if red or not)
-		for(int i = 0; i < acCount; ++i)
-		{
-			status[i] = isRed(content, i, time);
-		}
-		
-		//Check if ALL AC units are Red, if so, break loop
-		if(allRed(status, acCount))
-			break;
+	//Check the status of each AC unit (if red or not)
+	for(int i = 0; i < acCount; ++i)
+	{
+		status[i] = isRed(content, i, time);
+	}
+	
+	//Check if ALL AC units are Red, if so, break loop
+	if(allRed(status, acCount))
+		break;
 
-		++time;
+	++time;
     }
 
     std::cout << time << "\n";
@@ -123,12 +123,12 @@ bool isRed(int content[][2], int index, int currentTime)
     int remainderTime = currentTime % getTotalTime(content, index);
 	
     if(remainderTime == 0)
-		return true;   
+	return true;   
  
     if(remainderTime > content[index][0])
-		return true;
+	return true;
     else
-		return false;
+	return false;
 }
 
 /**
@@ -141,8 +141,8 @@ bool allRed(bool status[], int total)
 
     for(int i = 0; i < total; ++i)
     {
-		if(status[i])
-			trueCount++;
+	if(status[i])
+		trueCount++;
 
     }
 
