@@ -89,12 +89,12 @@ int main(int argc, const char *argv[])
 	//Check the status of each AC unit (if red or not)
 	for(int i = 0; i < acCount; ++i)
 	{
-	status[i] = isRed(content, i, time);
+	    status[i] = isRed(content, i, time);
 	}
 	
 	//Check if ALL AC units are Red, if so, break loop
 	if(allRed(status, acCount))
-	break;
+	    break;
 
 	++time;
     }
@@ -142,7 +142,7 @@ bool allRed(bool status[], int total)
     for(int i = 0; i < total; ++i)
     {
 	if(status[i])
-	trueCount++;
+	    trueCount++;
 
     }
 
